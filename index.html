@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Tebak Nama</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Game Tebak Nama</h1>
+    <p id="level-info">Level 1</p>
+    <p id="score">⭐ Skor: 0</p>
+    <p id="high-score">🏅 Skor Tertinggi: 0</p>
+    <p id="timer">⏱ Waktu: 30s</p>
+    <div id="level-selector">
+      <label for="level-select">Pilih Level:</label>
+      <select id="level-select" onchange="selectLevel()"></select>
+    </div>
+    <img id="person-image" src="game-tebak-nama" alt="Person Image">
+    <div id="shuffled-letters"></div>
+    <div id="constructed-answer"></div>
+    <button onclick="resetAnswer()">🔄 Reset Jawaban</button>
+    <p id="feedback"></p>
+    <button onclick="toggleMusic()">🎶 on/of Musik</button>
+
+    <!-- Quiz Section -->
+    <div id="quiz-section" style="display:none; margin-top: 30px;">
+      <h2>Pertanyaan Tambahan</h2>
+      <p id="quiz-question"></p>
+      <input type="text" id="quiz-answer" placeholder="Ketik jawaban...">
+      <br><br>
+      <button onclick="submitQuizAnswer()">Kirim Jawaban</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

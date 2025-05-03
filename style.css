@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
+  text-align: center;
+  padding: 30px;
+  margin: 0;
+}
+
+.container {
+  background-color: #ffffffcc;
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#level-info, #score, #high-score, #timer {
+  font-size: 18px;
+  color: #444;
+  margin: 5px 0;
+}
+
+#person-image {
+  width: 220px;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px 0;
+  border: 4px solid #f1f1f1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#shuffled-letters {
+  margin: 20px 0;
+}
+
+.letter-button {
+  display: inline-block;
+  margin: 5px;
+  padding: 15px;
+  font-size: 22px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4facfe;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.letter-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+#constructed-answer {
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 10px;
+  color: #333;
+  margin-top: 10px;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4facfe;
+  color: white;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #00f2fe;
+}
+
+#feedback {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #444;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  } 
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
